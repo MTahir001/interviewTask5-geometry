@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgb(171, 167, 167);
+}
+.child{
+    position: relative;
+    border: 5rem solid red;
+    border-radius: 50%;
+    border-bottom-color: black;
+}
+.child::after{
+    content: "";
+    position: absolute;
+    border:7rem solid;
+    border-color: transparent;
+    border-bottom-color: green;
+    right:-7rem;
+    bottom: -7rem;
+    z-index: -1;
+}
